@@ -14,7 +14,8 @@ const ExpenseItem = (props) => {
         <h2>{props.LocationOfExpenditure}</h2>
         <div className='expense-item__price' >${props.amount}</div>
       </div> 
-    
+      <button>change Title</button>
+      <button>delete </button>
       
     </Card>
   );
