@@ -7,22 +7,22 @@ const App = () => {
     {
       id: 'e1',
       title: 'Toilet Paper',
-      LocationOfExpenditure: 'market',
+      LocationOfExpenditure: 'shop',
       amount: 94.12,
       date: new Date(2020, 7, 14),
     },
-    { id: 'e2', title: 'New TV',LocationOfExpenditure: 'market', amount: 799.49, date: new Date(2021, 2, 12) },
+    { id: 'e2', title: 'New TV', LocationOfExpenditure: 'T.V showroom', amount: 799.49, date: new Date(2021, 2, 12) },
     {
       id: 'e3',
       title: 'Car Insurance',
-      LocationOfExpenditure: 'market',
+      LocationOfExpenditure: 'car showroom',
       amount: 294.67,
       date: new Date(2021, 2, 28),
     },
     {
       id: 'e4',
       title: 'New Desk (Wooden)',
-      LocationOfExpenditure: 'market',
+      LocationOfExpenditure: 'woodenshop',
       amount: 450,
       date: new Date(2021, 5, 12),
     },
@@ -38,7 +38,7 @@ const App = () => {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <Expenses items={ expenses } />
+      <Expenses items={expenses} />
     </div>
   );
 }
