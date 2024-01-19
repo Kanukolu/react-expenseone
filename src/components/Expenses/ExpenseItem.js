@@ -9,7 +9,15 @@ const ExpenseItem = (props) => {
   return (
     <Card className='expense-item'>
       <ExpenseDate date={props.date} />
-      <ExpenseDetails title={props.amount} LocationOfExpenditure={props.LocationOfExpenditure} amount={props.amount}/>
+      <div className='expense-item__description'>
+        <h2>{props.title}</h2>
+      
+        <h2>{props.LocationOfExpenditure}</h2>
+        <div className='expense-item__price' >${props.amount}</div>
+      </div> 
+      <button>change title</button>
+      <button>Delete</button>
+      
     </Card>
   );
 }
